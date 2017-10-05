@@ -1,0 +1,38 @@
+
+
+	let firstName = "John";
+	let alternate = "Tina";
+	let last;
+	let middle;
+	let title;
+	let output;
+
+	console.log(firstName);
+	console.log(alternate);
+	console.log(last);
+	console.log(middle);
+	console.log(title);
+	console.log(output);
+
+	if(firstName === "Zernan")
+	{
+	  last = "Verceles";
+	  middle = "Marquez";
+	  title = "Mr.";
+	  output = `Hi There! ${title} ${firstName} ${middle} ${last}`;
+	}
+	else if(alternate === "Tina")
+	{
+	  last = "Verceles";
+	  middle = "Racal";
+	  title = "Mrs."
+	  
+	  output = `Hello! ${title} ${alternate} ${middle} ${last} Sorry to know Zernan is not available.`;
+	}
+	else
+	{
+	  output = `Sorry, only ${firstName} or ${alternate} is allowed here.`;
+	}
+
+	console.log(output);
+	
