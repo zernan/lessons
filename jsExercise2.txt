@@ -1,0 +1,41 @@
+let message;
+	for(let i=0; i < 30; i+=1)
+	{
+	  
+	    message = "Value is " + i
+	    console.log(message)
+	}
+	
+	function squared(x) {
+	  return x*x;
+	}
+	
+	const triple = (x) => { return 3*x; }
+	
+	console.log(squared(3))
+	console.log(triple(4))
+	
+	const faveBook = { title:"Valentine Pontifex", author:{firstName:"Robert", lastName:"Silverberg"}, date:"1996", publisher:"Eos", getAuthorName() { return ` ${this.author.firstName} ${this.author.lastName}` }, getPublishInfo() { return `Published ${this.date} ${this.publisher}`} }
+	console.log(faveBook)
+	
+	const bookCopy = Object.create(faveBook)
+	
+	console.log(bookCopy.title)
+	console.log(bookCopy.getAuthorName())
+console.log(bookCopy.getPublishInfo())
+	
+	bookCopy.date = "1983"
+	bookCopy.publisher = "Bantam Books"
+	
+	console.log(bookCopy.title)
+	console.log(bookCopy.getAuthorName())
+	console.log(bookCopy.getPublishInfo())
+	
+	// test deletion to revert back to parent object values
+	delete bookCopy.date
+	delete bookCopy.publisher
+	
+	console.log(bookCopy.title)
+	console.log(bookCopy.getAuthorName())
+	console.log(bookCopy.getPublishInfo())
+	
