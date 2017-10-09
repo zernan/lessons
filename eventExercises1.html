@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+ 
+  <ul id="games">Games
+    <li>Darts</li>
+    <li>Chess</li>
+    <li>Monopoly</li>
+    <li>Scrabble</li>
+    <li>CodeName</li>
+  </ul>
+
+
+  <input id="eventButton" type="button" onClick="hideText()" value="Click to hide texts">
+
+  <script>
+    
+    /*function informUser() {
+      alert("You just made another button click!");
+    }
+
+    function greetUser() {
+      alert("Hi, nice to interact with you!");
+    }*/
+
+    let p = document.getElementById("games");
+    //alert(`${p}`)
+    
+    function hideText() {
+      p.innerHTML = "";
+    }
+
+  /*eventButton.onclick = () => alert("I'm starting with some messages for you");
+  eventButton.addEventListener("click", informUser);
+  eventButton.addEventListener("click", greetUser);    */
+  </script>
+
+  
+
+</body>
+</html>

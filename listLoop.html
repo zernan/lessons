@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<ul>Games
+		<li>Darts</li>
+		<li>Chess</li>
+		<li>Monopoly</li>
+		<li>Scrabble</li>
+		<li>CodeName</li>
+	</ul>
+
+	<ul>Hobbies
+		<li>Cycling</li>
+		<li>Swimming</li>
+		<li>Coin Collecting</li>
+		<li>Toy Collecting</li>
+	</ul>
+
+	<script>
+		for(let lists of document.getElementsByTagName('ul'))
+		{
+		  let name = lists.firstChild.data; 
+		  /*for(let list in lists)
+		  {
+		    alert(list.length)
+		  }*/
+		  let count = lists.getElementsByTagName('li').length;
+		  alert(`${name} ${count}`);
+		}
+		
+	</script>
+</body>
+</html>
