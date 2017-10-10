@@ -16,13 +16,24 @@
 					<h2>Twitch</h2>
 					<div id="clipListDisplay"></div>
 						<iframe
-    						src="https://www.twitch.tv/#"
-    						height="300"
-    						width="400"
+    						src="http://player.twitch.tv/?channel=zmverceles&"
+    						height="330"
+    						width="540"
+    						frameborder="1"
     						scrolling="no"
-    						allowfullscreen="true"
+    						allowfullscreen="true">
 						</iframe>
-												
+						<!--<iframe
+   							src="https://clips.twitch.tv/embed?clip=IncredulousAbstemiousFennelImGlitch"
+   							height="330"
+   							width="540"
+   							frameborder="1"
+   							scrolling="no"
+   							allowfullscreen="true">
+						</iframe>-->
+						<iframe frameborder="1" scrolling="no" id="chat_embed" 
+							src="http://www.twitch.tv/zmverceles/chat" height="330" width="350">
+						</iframe>
 				</div>
 			</div> <!-- end of 1st class col -->
 
@@ -41,6 +52,7 @@
 	</div>
 	
 	<script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+	<script>src="https://api.twitch.tv/kraken"</script>
 	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 	<a href="https://twitter.com/intent/tweet?in_reply_to=463440424141459456">Reply</a>
